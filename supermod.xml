@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<mod name="Pat Jokers"
+	description="Lets you pat your (and other's) Jokers"
+	author="Hoppip"
+	color="0.043 0.808 0.6"
+	image="mod.png"
+	version="1.0">
+
+	<update identifier="pd2-pat-jokers" meta="https://updates.hoppip.at/pd2-pat-jokers"/>
+
+	<dependencies>
+		<dependency identifier="pd2-hoplib" name="HopLib" meta="https://updates.hoppip.at/pd2-hoplib"/>
+		<dependency identifier="Interaction Animations" download_url="https://api.modworkshop.net/mods/59555/download"/>
+	</dependencies>
+
+	<hooks script_path="mod.lua">
+		<post hook_id="lib/tweak_data/interactiontweakdata"/>
+		<post hook_id="lib/units/interactions/interactionext"/>
+	</hooks>
+
+	<tweak definition="tweaks.xml"/>
+
+	<assets>
+		<file path="assets/pat_joker1.animation" name="anims/fps/interacts/pat_joker1.animation"/>
+		<file path="assets/pat_joker2.animation" name="anims/fps/interacts/pat_joker2.animation"/>
+	</assets>
+
+</mod>

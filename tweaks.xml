@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!-- Animations -->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<target>
+			<anim name="pat_joker1" file="anims/fps/interacts/pat_joker1" blend_set="offhand"/>
+			<anim name="pat_joker2" file="anims/fps/interacts/pat_joker2" blend_set="offhand"/>
+		</target>
+	</tweak>
+
+	<!-- Animation state name and redirect -->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+
+		<target>
+			<to name="pat_joker" redirect="fps/interact/offhand/pat_joker"/>
+		</target>
+	</tweak>
+
+	<!-- Animation state definition -->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+		</search>
+
+		<target>
+			<state name="fps/interact/offhand/pat_joker" type="once" segment="offhand" speed="1.0">
+				<default blend="8"/>
+				<anim name="pat_joker1"/>
+				<anim name="pat_joker2"/>
+			</state>
+		</target>
+	</tweak>
+</tweaks>
