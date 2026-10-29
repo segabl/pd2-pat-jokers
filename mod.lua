@@ -4,6 +4,7 @@ if not PatJokers then
 	PatJokers.mod_path = ModPath
 	PatJokers.trust_data = {}
 	PatJokers.trust_levels = { 0, 10, 25, 45, 70 }
+	PatJokers.num_messages = { 40, 40, 40, 40, 40 }
 	PatJokers.settings = {
 		show_trust = false
 	}
@@ -42,7 +43,8 @@ if not PatJokers then
 			end
 		end
 
-		local string_id = "hud_hint_joker_trust_" .. trust_level .. "_" .. math.random(1, 20)
+		local num_messages = self.num_messages[trust_level] or 40
+		local string_id = "hud_hint_joker_trust_" .. trust_level .. "_" .. math.random(num_messages)
 		local hint_text = managers.localization:text(string_id, {
 			JOKER = HopLib:unit_info_manager():get_info(unit):nickname()
 		})
