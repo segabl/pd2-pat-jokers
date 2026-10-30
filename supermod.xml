@@ -4,7 +4,7 @@
 	author="Hoppip"
 	color="0.043 0.808 0.6"
 	image="mod.png"
-	version="1.0.1">
+	version="1.0.2">
 
 	<update identifier="pd2-pat-jokers" meta="https://updates.hoppip.at/pd2-pat-jokers"/>
 
@@ -23,6 +23,7 @@
 	<assets>
 		<file path="assets/pat_joker1.animation" name="anims/fps/interacts/pat_joker1.animation"/>
 		<file path="assets/pat_joker2.animation" name="anims/fps/interacts/pat_joker2.animation"/>
+		<file path="assets/pat_joker3.animation" name="anims/fps/interacts/pat_joker3.animation"/>
 	</assets>
 
 </mod>

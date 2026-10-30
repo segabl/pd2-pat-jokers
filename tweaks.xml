@@ -9,6 +9,7 @@
 		<target>
 			<anim name="pat_joker1" file="anims/fps/interacts/pat_joker1" blend_set="offhand"/>
 			<anim name="pat_joker2" file="anims/fps/interacts/pat_joker2" blend_set="offhand"/>
+			<anim name="pat_joker3" file="anims/fps/interacts/pat_joker3" blend_set="offhand"/>
 		</target>
 	</tweak>
 
@@ -33,8 +34,9 @@
 		<target>
 			<state name="fps/interact/offhand/pat_joker" type="once" segment="offhand" speed="1.0">
 				<default blend="8"/>
-				<anim name="pat_joker1"/>
-				<anim name="pat_joker2"/>
+				<anim name="pat_joker1" weight="10"/>
+				<anim name="pat_joker2" weight="10"/>
+				<anim name="pat_joker3" weight="1"/>
 			</state>
 		</target>
 	</tweak>
