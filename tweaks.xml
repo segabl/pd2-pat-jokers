@@ -37,6 +37,14 @@
 				<anim name="pat_joker1" weight="10"/>
 				<anim name="pat_joker2" weight="10"/>
 				<anim name="pat_joker3" weight="1"/>
+
+				<keys>
+					<key at="trigger" trigger="interact_joker_pat_1" callback="play_sound" class_name="base" param1="foley_impact_light"/>
+					<key at="trigger" trigger="interact_joker_pat_2" callback="play_sound" class_name="base" param1="foley_impact_light"/>
+					<key at="trigger" trigger="interact_joker_rub_1" callback="play_sound" class_name="base" param1="foley_flap_light"/>
+					<key at="trigger" trigger="interact_joker_rub_2" callback="play_sound" class_name="base" param1="foley_flap_light"/>
+					<key at="trigger" trigger="interact_joker_rub_3" callback="play_sound" class_name="base" param1="foley_flap_light"/>
+				</keys>
 			</state>
 		</target>
 	</tweak>
